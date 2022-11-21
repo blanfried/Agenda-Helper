@@ -11,3 +11,6 @@ https://github.com/blanfried/Agenda-Helper
 
 ### Deployed URL
 https://blanfried.github.io/Agenda-Helper/
+
+### Webpage Screenshot
+![Agenda Helper Screenshot](./Assets/agendaPic.png)
