@@ -56,3 +56,29 @@ function currentDate() {
         }
       });
     }
+
+
+    function loadSchedule() {}
+
+function saveSchedule() {
+  $("button").click(function () {
+    console.log("button clicked");
+    document.querySelectorAll(".blockListItem").forEach((textContent, i) => {
+      if (textContent.value == "") return;
+      text = textContent.value;
+      let textSchedule = JSON.parse(localStorage.getItem("textSchedule"));
+      textSchedule[i] = text;
+      let textScheduleStr = JSON.stringify(textSchedule);
+      localStorage.setItem("textSchedule", textScheduleStr);
+    });
+  });
+}
+
+$("button").click(function (event) {
+  event.preventDefault();
+});
+
+saveSchedule();
+loadSchedule();
+currentDate();
+checkTime();
